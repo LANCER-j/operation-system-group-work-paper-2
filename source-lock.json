@@ -1,0 +1,106 @@
+{
+  "base": "69973b830859bc6529a7a0468ba0d80ee5117826",
+  "head": "8e76f4826daadebce6e7f5fe9cbd48823fd403a0",
+  "files": [
+    {
+      "path": "include/linux/init_task.h",
+      "sha": "14698bdea0bff7119811bbb320b6195554d2c58f",
+      "status": "modified"
+    },
+    {
+      "path": "include/linux/log2.h",
+      "sha": "f38fae23bdac52977e563b33625da1fec8b76a7b",
+      "status": "modified"
+    },
+    {
+      "path": "include/linux/sched.h",
+      "sha": "a674ca3c7dabf748a81e75f7d2ab2c56ef4b2ce7",
+      "status": "modified"
+    },
+    {
+      "path": "include/linux/sched/runq.h",
+      "sha": "b75155f212b3719d54b410d8f224d7bdd04327f6",
+      "status": "added"
+    },
+    {
+      "path": "include/linux/sched/sysctl.h",
+      "sha": "b249fba201fa42bf798fe0fd215f33598b345149",
+      "status": "modified"
+    },
+    {
+      "path": "include/trace/events/sched.h",
+      "sha": "f9622344791c1d9b2507f4982c9d662aff984491",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/Makefile",
+      "sha": "7908ec2edc78c7e0d85c66ded89da7a2dc7fd237",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/core.c",
+      "sha": "57ce22926d3dfa677414d09884bfaabfc773a9ca",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/cpu_search.c",
+      "sha": "f31eeeb973e6cd7afd9f672ef280cfaba8e13b76",
+      "status": "added"
+    },
+    {
+      "path": "kernel/sched/cpu_search.h",
+      "sha": "930881d5317471da22f02ec9581eee1ff4958fbd",
+      "status": "added"
+    },
+    {
+      "path": "kernel/sched/fair.c",
+      "sha": "276c961180c9e18cd8095d92a79f5722b02f30e1",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/idle_task.c",
+      "sha": "6b958e29eff5b84a94881add97b2b65d1ecaf2af",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/rt.c",
+      "sha": "141a88280755e076c3ad493ddc8203462674c33c",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/runq.c",
+      "sha": "500bce0f50002578b02bee29844ec3194d6f9fff",
+      "status": "added"
+    },
+    {
+      "path": "kernel/sched/sched.h",
+      "sha": "628d3a7e5314edf32e6f2d2532370d2d5dd731ed",
+      "status": "modified"
+    },
+    {
+      "path": "kernel/sched/sched_ktz.c",
+      "sha": "9e9d7a65d184df9edbc969f140460933454a68bd",
+      "status": "added"
+    },
+    {
+      "path": "kernel/sysctl.c",
+      "sha": "8c239ea8318a857a3d357acf2845fc8ebf95dee3",
+      "status": "modified"
+    },
+    {
+      "path": "tools/include/linux/log2.h",
+      "sha": "d5677d39c1e4c88c254b0d55b9d0ca5ab505fd92",
+      "status": "modified"
+    },
+    {
+      "path": "tools/perf/pmu-events/jevents",
+      "sha": "560a5a3e31ea6b9b3bea038337dfefc9b98b38dc",
+      "status": "added"
+    },
+    {
+      "path": "tools/perf/pmu-events/pmu-events.c",
+      "sha": "6f6f134d18fd82dad511ee881bd2eb1fa04c3119",
+      "status": "added"
+    }
+  ]
+}
