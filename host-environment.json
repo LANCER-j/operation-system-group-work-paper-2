@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-11",
+  "host": "Windows",
+  "processor": "Intel Core Ultra 5 236V",
+  "logical_processors": 8,
+  "physical_memory_bytes": 16891387904,
+  "hypervisor_present": true,
+  "whpx_partition_probe": "success",
+  "wsl_distributions": 0,
+  "planned_guest": "Ubuntu 18.04",
+  "planned_guest_ram_mb": 4096,
+  "planned_guest_vcpus": 4,
+  "experiment_status": "nine_primary_runs_completed_and_independently_verified",
+  "actual_guest": "Ubuntu 18.04.6",
+  "actual_guest_cpu_model": "Nehalem",
+  "actual_guest_vcpus": 4,
+  "actual_guest_ram_mb": 4096,
+  "vm_state": "powered_off",
+  "additional_superseded_runs": 3
+}

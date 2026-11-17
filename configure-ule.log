@@ -1,0 +1,9 @@
+make: Entering directory '/home/researcher/paper02/build/work/sources/ule-8e76f4826daadebce6e7f5fe9cbd48823fd403a0'
+make[1]: Entering directory '/home/researcher/paper02/build/work/objects/ule'
+  GEN     ./Makefile
+scripts/kconfig/conf  --olddefconfig Kconfig
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/researcher/paper02/build/work/objects/ule'
+make: Leaving directory '/home/researcher/paper02/build/work/sources/ule-8e76f4826daadebce6e7f5fe9cbd48823fd403a0'
