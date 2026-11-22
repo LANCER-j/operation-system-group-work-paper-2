@@ -1,0 +1,233 @@
+[    0.000000] Linux version 4.9.0-paper02-ule (paper02@replication) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ) #2 SMP 2018-05-02 15:39:10 UTC
+[    0.000000] Command line: root=PARTUUID=94b4eafe-4fc5-4e08-b832-d023be514ab9 ro console=ttyS0,115200n8
+[    0.000000] x86/fpu: Legacy x87 FPU detected.
+[    0.000000] x86/fpu: Using 'eager' FPU context switches.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bffdcfff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bffdd000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] Hypervisor detected: Microsoft HyperV
+[    0.000000] HyperV: features 0xa63, hints 0x40220
+[    0.000000] HyperV: LAPIC Timer Frequency: 0xf4240
+[    0.000000] clocksource: hyperv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000000] tsc: Marking TSC unstable due to running on Hyper-V
+[    0.000000] e820: last_pfn = 0x140000 max_arch_pfn = 0x400000000
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- WT  
+[    0.000000] e820: last_pfn = 0xbffdd max_arch_pfn = 0x400000000
+[    0.000000] found SMP MP-table at [mem 0x000f54b0-0x000f54bf] mapped at [ffff8800000f54b0]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] RAMDISK: [mem 0xbf5a1000-0xbffcffff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F52B0 000014 (v00 BOCHS )
+[    0.000000] ACPI: RSDT 0x00000000BFFE2446 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 0x00000000BFFE22E2 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BFFE0040 0022A2 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: FACS 0x00000000BFFE0000 000040
+[    0.000000] ACPI: APIC 0x00000000BFFE2356 000090 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: HPET 0x00000000BFFE23E6 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: WAET 0x00000000BFFE241E 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13fff9000-0x13fffcfff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000bffdcfff]
+[    0.000000]   node   0: [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000013fffffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0x608
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbffdd000-0xbfffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xc0000000-0xfffbffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[    0.000000] e820: [mem 0xc0000000-0xfffbffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.000000] setup_percpu: NR_CPUS:64 nr_cpumask_bits:64 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] percpu: Embedded 36 pages/cpu @ffff88013fc00000 s107800 r8192 d31464 u524288
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 1032038
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: root=PARTUUID=94b4eafe-4fc5-4e08-b832-d023be514ab9 ro console=ttyS0,115200n8
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Memory: 4033264K/4193772K available (9390K kernel code, 1398K rwdata, 2972K rodata, 1224K init, 812K bss, 160508K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ||| STABLE WITH ORIGINAL PLB + fixed random |||
+[    0.000000] tickincr		 = 1024
+[    0.000000] PRI_MIN_TIMESHARE		 = 100
+[    0.000000] PRI_MAX_TIMESHARE		 = 139
+[    0.000000] PRI_INTERACT_RANGE		 = 12
+[    0.000000] PRI_MIN_INTERACT		 = 100
+[    0.000000] PRI_MAX_INTERACT		 = 111
+[    0.000000] PRI_BATCH_RANGE		 = 28
+[    0.000000] PRI_MIN_BATCH		 = 112
+[    0.000000] PRI_MAX_BATCH		 = 139
+[    0.000000] SCHED_PRI_NRESV		 = 40
+[    0.000000] SCHED_PRI_NHALF		 = 20
+[    0.000000] SCHED_PRI_MIN		 = 119
+[    0.000000] SCHED_PRI_MAX		 = 131
+[    0.000000] SCHED_PRI_RANGE		 = 13
+[    0.000000] ||| STABLE WITH ORIGINAL PLB + fixed random |||
+[    0.000000] tickincr		 = 1024
+[    0.000000] PRI_MIN_TIMESHARE		 = 100
+[    0.000000] PRI_MAX_TIMESHARE		 = 139
+[    0.000000] PRI_INTERACT_RANGE		 = 12
+[    0.000000] PRI_MIN_INTERACT		 = 100
+[    0.000000] PRI_MAX_INTERACT		 = 111
+[    0.000000] PRI_BATCH_RANGE		 = 28
+[    0.000000] PRI_MIN_BATCH		 = 112
+[    0.000000] PRI_MAX_BATCH		 = 139
+[    0.000000] SCHED_PRI_NRESV		 = 40
+[    0.000000] SCHED_PRI_NHALF		 = 20
+[    0.000000] SCHED_PRI_MIN		 = 119
+[    0.000000] SCHED_PRI_MAX		 = 131
+[    0.000000] SCHED_PRI_RANGE		 = 13
+[    0.000000] ||| STABLE WITH ORIGINAL PLB + fixed random |||
+[    0.000000] tickincr		 = 1024
+[    0.000000] PRI_MIN_TIMESHARE		 = 100
+[    0.000000] PRI_MAX_TIMESHARE		 = 139
+[    0.000000] PRI_INTERACT_RANGE		 = 12
+[    0.000000] PRI_MIN_INTERACT		 = 100
+[    0.000000] PRI_MAX_INTERACT		 = 111
+[    0.000000] PRI_BATCH_RANGE		 = 28
+[    0.000000] PRI_MIN_BATCH		 = 112
+[    0.000000] PRI_MAX_BATCH		 = 139
+[    0.000000] SCHED_PRI_NRESV		 = 40
+[    0.000000] SCHED_PRI_NHALF		 = 20
+[    0.000000] SCHED_PRI_MIN		 = 119
+[    0.000000] SCHED_PRI_MAX		 = 131
+[    0.000000] SCHED_PRI_RANGE		 = 13
+[    0.000000] ||| STABLE WITH ORIGINAL PLB + fixed random |||
+[    0.000000] tickincr		 = 1024
+[    0.000000] PRI_MIN_TIMESHARE		 = 100
+[    0.000000] PRI_MAX_TIMESHARE		 = 139
+[    0.000000] PRI_INTERACT_RANGE		 = 12
+[    0.000000] PRI_MIN_INTERACT		 = 100
+[    0.000000] PRI_MAX_INTERACT		 = 111
+[    0.000000] PRI_BATCH_RANGE		 = 28
+[    0.000000] PRI_MIN_BATCH		 = 112
+[    0.000000] PRI_MAX_BATCH		 = 139
+[    0.000000] SCHED_PRI_NRESV		 = 40
+[    0.000000] SCHED_PRI_NHALF		 = 20
+[    0.000000] SCHED_PRI_MIN		 = 119
+[    0.000000] SCHED_PRI_MAX		 = 131
+[    0.000000] SCHED_PRI_RANGE		 = 13
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=4
+[    0.000000] NR_IRQS:4352 nr_irqs:456 16
+[    0.000000] Console: colour VGA+ 80x25
+[    0.000000] console [ttyS0] enabled
+[    0.000000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.000000] tsc: Unable to calibrate against PIT
+[    0.000000] tsc: using HPET reference calibration
+[    0.000000] tsc: Detected 3110.168 MHz processor
+[    0.006045] Calibrating delay loop (skipped), value calculated using timer frequency.. 6220.33 BogoMIPS (lpj=3110168)
+[    0.007598] pid_max: default: 32768 minimum: 301
+[    0.008017] ACPI: Core revision 20160831
+[    0.009775] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.011023] Security Framework initialized
+[    0.012000] SELinux:  Initializing.
+[    0.012194] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.021293] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.026659] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.027018] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.028817] CPU: Physical Processor ID: 0
+[    0.029009] CPU: Processor Core ID: 0
+[    0.030016] mce: CPU supports 0 MCE banks
+[    0.030823] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.031011] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.043000] Freeing SMP alternatives memory: 36K (ffffffff82091000 - ffffffff8209a000)
+[    0.058000] smpboot: APIC(0) Converting physical 0 to logical package 0
+[    0.058011] smpboot: Max logical packages: 1
+[    0.062000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.062000] smpboot: CPU0: Intel Core i7 9xx (Nehalem Class Core i7) (family: 0x6, model: 0x1a, stepping: 0x3)
+[    0.063003] Performance Events: unsupported p6 CPU model 26 no PMU driver, software events only.
+[    0.065000] x86: Booting SMP configuration:
+[    0.065009] .... node  #0, CPUs:      #1[    0.007000] mce: CPU supports 0 MCE banks
+[    0.007000] calibrate_delay_direct() dropping min bogoMips estimate 2 = 3910653
+[    0.007000] calibrate_delay_direct() dropping max bogoMips estimate 0 = 5440341
+[    0.007000] calibrate_delay_direct() dropping max bogoMips estimate 4 = 5293889
+[    0.130466]  #2[    0.007000] mce: CPU supports 0 MCE banks
+[    0.007000] calibrate_delay_direct() dropping max bogoMips estimate 0 = 5748173
+[    0.007000] calibrate_delay_direct() dropping max bogoMips estimate 1 = 5608402
+[    0.193000]  #3[    0.007000] mce: CPU supports 0 MCE banks
+[    0.007000] calibrate_delay_direct() dropping min bogoMips estimate 4 = 4101788
+[    0.255742] x86: Booted up 1 node, 4 CPUs
+[    0.256004] smpboot: Total of 4 processors activated (34995.13 BogoMIPS)
+[    0.258224] BUG: unable to handle kernel NULL pointer dereference at           (null)
+[    0.259000] IP: [<ffffffff8109771f>] select_task_rq_ktz+0x6f/0x2c0
+[    0.259000] PGD 0 [    0.259000] 
+[    0.259000] Oops: 0000 [#1] SMP
+[    0.259000] Modules linked in:
+[    0.259000] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 4.9.0-paper02-ule #2
+[    0.259000] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org 04/01/2014
+[    0.259000] task: ffff88013ab18000 task.stack: ffffc90000630000
+[    0.259000] RIP: 0010:[<ffffffff8109771f>]  [<ffffffff8109771f>] select_task_rq_ktz+0x6f/0x2c0
+[    0.259000] RSP: 0000:ffffc90000633cc0  EFLAGS: 00010082
+[    0.259000] RAX: ffff88013fc0cae0 RBX: 0000000000000000 RCX: 0000000000000000
+[    0.259000] RDX: 00000000000178c0 RSI: 0000000000000000 RDI: ffff88013ab1be80
+[    0.259000] RBP: ffffc90000633d30 R08: ffff88013fc00000 R09: 0000000000000000
+[    0.259000] R10: ffffea0004eaeb40 R11: 000000000001cc88 R12: ffff88013ab1c5e4
+[    0.259000] R13: 0000000000000000 R14: 0000000000000046 R15: 0000000000000083
+[    0.259000] FS:  0000000000000000(0000) GS:ffff88013fc00000(0000) knlGS:0000000000000000
+[    0.259000] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[    0.259000] CR2: 0000000000000000 CR3: 0000000001e08000 CR4: 00000000000006f0
+[    0.259000] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[    0.259000] DR3: 0000000000000000 DR6: 00000000ffff07f0 DR7: 0000000000000400
+[    0.259000] Stack:
+[    0.259000]  ffff88013ab18000 ffff88013fc1c5c0 ffffffff00000000 ffff88013fc178c0
+[    0.259000]  ffff88013ab18000 0000000000000000 ffffffffffffffff 000000028114f09d
+[    0.259000]  ffffffff81074510 ffff88013ab1be80 ffff88013ab1c5e4 0000000000000000
+[    0.259000] Call Trace:
+[    0.259000]  [<ffffffff81074510>] ? apply_wqattrs_prepare+0x30/0x240
+[    0.259000]  [<ffffffff81083041>] try_to_wake_up+0xe1/0x370
+[    0.259000]  [<ffffffff81181792>] ? kmem_cache_alloc_node+0x32/0x160
+[    0.259000]  [<ffffffff810832e0>] wake_up_process+0x10/0x20
+[    0.259000]  [<ffffffff81071a31>] pwq_adjust_max_active+0x91/0xd0
+[    0.259000]  [<ffffffff81071aa0>] link_pwq+0x30/0x50
+[    0.259000]  [<ffffffff81071b31>] apply_wqattrs_commit+0x71/0xf0
+[    0.259000]  [<ffffffff8107474b>] apply_workqueue_attrs_locked+0x2b/0x80
+[    0.259000]  [<ffffffff81074ce9>] apply_workqueue_attrs+0x29/0x50
+[    0.259000]  [<ffffffff81075f8f>] __alloc_workqueue_key+0x26f/0x4e0
+[    0.259000]  [<ffffffff81082c53>] ? __set_cpus_allowed_ptr+0x83/0x170
+[    0.259000]  [<ffffffff81f96b4e>] ? init_sched_dl_class+0x25/0x46
+[    0.259000]  [<ffffffff81f965f7>] ? sched_init_smp+0x4d7/0x4fe
+[    0.259000]  [<ffffffff81f7a82c>] ? set_debug_rodata+0x12/0x12
+[    0.259000]  [<ffffffff81f9a79e>] cpuset_init_smp+0x50/0x60
+[    0.259000]  [<ffffffff81f7afc0>] kernel_init_freeable+0xf4/0x201
+[    0.259000]  [<ffffffff819212b0>] ? rest_init+0x80/0x80
+[    0.259000]  [<ffffffff819212b9>] kernel_init+0x9/0x100
+[    0.259000]  [<ffffffff81927345>] ret_from_fork+0x25/0x30
+[    0.259000] Code: 2c cd c0 c3 c7 81 49 89 c9 4c 89 6d a8 65 44 8b 2d 1f 2a f7 7e 49 63 f5 4c 8b 04 f5 c0 c3 c7 81 4c 01 c0 48 8b 18 eb 03 48 89 c3 <48> 8b 03 48 85 c0 75 f5 48 8d b7 c0 03 00 00 49 89 d6 48 89 75 
+[    0.259000] RIP  [<ffffffff8109771f>] select_task_rq_ktz+0x6f/0x2c0
+[    0.259000]  RSP <ffffc90000633cc0>
+[    0.259000] CR2: 0000000000000000
+[    0.259000] ---[ end trace 7448a38f97982b8e ]---
+[    0.259008] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000009
+[    0.259008] 
+[    0.260000] ---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000009
+[    0.260000] 
