@@ -1,0 +1,9 @@
+make: Entering directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'
+make[1]: Entering directory '/home/researcher/paper02/build/work/objects/cfs'
+  GEN     ./Makefile
+scripts/kconfig/conf  --olddefconfig Kconfig
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/researcher/paper02/build/work/objects/cfs'
+make: Leaving directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'

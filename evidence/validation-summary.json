@@ -1,0 +1,15 @@
+{
+  "primary_audit": "passed",
+  "formal_primary_runs": 9,
+  "additional_superseded_extension_runs": 3,
+  "unit_tests": {
+    "passed": 8,
+    "kind": "offline_counter_and_guard_tests_not_experiment_data"
+  },
+  "analysis_math_self_test": "passed",
+  "formal_trace_integrity": "all_overrun_commit_overrun_dropped_events_zero",
+  "raw_trace_archives": 21,
+  "raw_archives_verified_after_decompression": true,
+  "report_language": "English",
+  "report_scope": "Section 5.1 adapted partial replication and one thread-count extension"
+}

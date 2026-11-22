@@ -1,0 +1,298 @@
+make: Entering directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'
+make[1]: Entering directory '/home/researcher/paper02/build/work/objects/common-config'
+  GEN     ./Makefile
+*** Default configuration is based on 'x86_64_defconfig'
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/researcher/paper02/build/work/objects/common-config'
+make: Leaving directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'
+make: Entering directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'
+make[1]: Entering directory '/home/researcher/paper02/build/work/objects/common-config'
+  GEN     ./Makefile
+Using .config as base
+Merging /home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826/kernel/configs/kvm_guest.config
+Value of CONFIG_HYPERVISOR_GUEST is redefined by fragment /home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826/kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_HYPERVISOR_GUEST is not set
+New value: CONFIG_HYPERVISOR_GUEST=y
+
+Value of CONFIG_VIRTIO_PCI is redefined by fragment /home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826/kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_VIRTIO_PCI is not set
+New value: CONFIG_VIRTIO_PCI=y
+
+Value of CONFIG_NET_9P is redefined by fragment /home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826/kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_NET_9P is not set
+New value: CONFIG_NET_9P=y
+
+Value of CONFIG_SCSI_LOWLEVEL is redefined by fragment /home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826/kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_SCSI_LOWLEVEL is not set
+New value: CONFIG_SCSI_LOWLEVEL=y
+
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     ./Makefile
+scripts/kconfig/conf  --oldconfig Kconfig
+*
+* Restart config...
+*
+*
+* Processor type and features
+*
+Symmetric multi-processing support (SMP) [Y/n/?] y
+Support x2apic (X86_X2APIC) [N/y/?] (NEW) 
+Enable MPS table (X86_MPPARSE) [Y/n/?] y
+Support for extended (non-PC) x86 platforms (X86_EXTENDED_PLATFORM) [Y/n/?] y
+ScaleMP vSMP (X86_VSMP) [N/y/?] n
+Goldfish (Virtual Platform) (X86_GOLDFISH) [N/y/?] n
+Intel MID platform support (X86_INTEL_MID) [N/y/?] n
+Mellanox Technologies platform support (MLX_PLATFORM) [N/m/y/?] n
+Intel Low Power Subsystem Support (X86_INTEL_LPSS) [N/y/?] n
+AMD ACPI2Platform devices support (X86_AMD_PLATFORM_DEVICE) [N/y/?] n
+Intel SoC IOSF Sideband support for SoC platforms (IOSF_MBI) [N/m/y/?] n
+Single-depth WCHAN output (SCHED_OMIT_FRAME_POINTER) [Y/n/?] y
+*
+* Linux guest support
+*
+Linux guest support (HYPERVISOR_GUEST) [Y/n/?] y
+  Enable paravirtualization code (PARAVIRT) [Y/n/?] y
+    paravirt-ops debugging (PARAVIRT_DEBUG) [N/y/?] (NEW) 
+    Paravirtualization layer for spinlocks (PARAVIRT_SPINLOCKS) [N/y/?] (NEW) 
+    Xen guest support (XEN) [N/y/?] (NEW) 
+    KVM Guest support (including kvmclock) (KVM_GUEST) [Y/n/?] y
+      Enable debug information for KVM Guests in debugfs (KVM_DEBUG_FS) [N/y/?] (NEW) 
+    Paravirtual steal time accounting (PARAVIRT_TIME_ACCOUNTING) [N/y/?] (NEW) 
+Processor family
+  1. Opteron/Athlon64/Hammer/K8 (MK8)
+  2. Intel P4 / older Netburst based Xeon (MPSC)
+  3. Core 2/newer Xeon (MCORE2)
+  4. Intel Atom (MATOM)
+> 5. Generic-x86-64 (GENERIC_CPU)
+choice[1-5?]: 5
+Old AMD GART IOMMU support (GART_IOMMU) [N/y/?] n
+IBM Calgary IOMMU support (CALGARY_IOMMU) [Y/n/?] y
+  Should Calgary be enabled by default? (CALGARY_IOMMU_ENABLED_BY_DEFAULT) [Y/n/?] y
+Enable Maximum number of SMP Processors and NUMA Nodes (MAXSMP) [N/y/?] n
+Maximum number of CPUs (NR_CPUS) [64] 64
+SMT (Hyperthreading) scheduler support (SCHED_SMT) [Y/n/?] y
+Multi-core scheduler support (SCHED_MC) [Y/n/?] y
+Preemption Model
+  1. No Forced Preemption (Server) (PREEMPT_NONE)
+> 2. Voluntary Kernel Preemption (Desktop) (PREEMPT_VOLUNTARY)
+  3. Preemptible Kernel (Low-Latency Desktop) (PREEMPT)
+choice[1-3]: 2
+Reroute for broken boot IRQs (X86_REROUTE_FOR_BROKEN_BOOT_IRQS) [Y/n/?] y
+Machine Check / overheating reporting (X86_MCE) [Y/n/?] y
+  Intel MCE features (X86_MCE_INTEL) [Y/n/?] y
+  AMD MCE features (X86_MCE_AMD) [Y/n/?] y
+Machine check injector support (X86_MCE_INJECT) [N/m/y/?] n
+*
+* Performance monitoring
+*
+Intel uncore performance events (PERF_EVENTS_INTEL_UNCORE) [Y/n/m/?] y
+Intel rapl performance events (PERF_EVENTS_INTEL_RAPL) [Y/n/m/?] y
+Intel cstate performance events (PERF_EVENTS_INTEL_CSTATE) [Y/n/m/?] y
+AMD Processor Power Reporting Mechanism (PERF_EVENTS_AMD_POWER) [N/m/y/?] n
+Dell i8k legacy laptop support (I8K) [N/m/y/?] n
+CPU microcode loading support (MICROCODE) [Y/n/?] y
+  Intel microcode loading support (MICROCODE_INTEL) [Y/n/?] y
+  AMD microcode loading support (MICROCODE_AMD) [Y/n/?] y
+/dev/cpu/*/msr - Model-specific register support (X86_MSR) [Y/n/m/?] y
+/dev/cpu/*/cpuid - CPU information support (X86_CPUID) [Y/n/m/?] y
+Numa Memory Allocation and Scheduler Support (NUMA) [Y/n/?] y
+  Old style AMD Opteron NUMA detection (AMD_NUMA) [Y/n/?] y
+  ACPI NUMA detection (X86_64_ACPI_NUMA) [Y/n/?] y
+  NUMA emulation (NUMA_EMU) [N/y/?] n
+Maximum NUMA Nodes (as a power of 2) (NODES_SHIFT) [6] 6
+Memory model
+> 1. Sparse Memory (SPARSEMEM_MANUAL)
+choice[1]: 1
+Sparse Memory virtual memmap (SPARSEMEM_VMEMMAP) [Y/n/?] y
+Enable to assign a node which has only movable memory (MOVABLE_NODE) [N/y/?] n
+Allow for memory hot-add (MEMORY_HOTPLUG) [N/y] n
+Allow for memory compaction (COMPACTION) [Y/n/?] y
+  Page migration (MIGRATION) [Y/?] y
+Enable bounce buffers (BOUNCE) [Y/n/?] y
+Enable KSM for page merging (KSM) [N/y/?] n
+Low address space to protect from user allocation (DEFAULT_MMAP_MIN_ADDR) [4096] 4096
+Enable recovery from hardware memory errors (MEMORY_FAILURE) [N/y/?] n
+Transparent Hugepage Support (TRANSPARENT_HUGEPAGE) [N/y/?] n
+Enable cleancache driver to cache clean pages if tmem is present (CLEANCACHE) [N/y/?] n
+Enable frontswap to cache swap pages if tmem is present (FRONTSWAP) [N/y/?] n
+Contiguous Memory Allocator (CMA) [N/y/?] n
+Common API for compressed memory storage (ZPOOL) [N/m/y/?] n
+Low (Up to 2x) density storage for compressed pages (ZBUD) [N/m/y/?] n
+Memory allocator for compressed pages (ZSMALLOC) [N/m/y/?] n
+Enable idle page tracking (IDLE_PAGE_TRACKING) [N/y/?] n
+Support non-standard NVDIMMs and ADR protected memory (X86_PMEM_LEGACY) [N/m/y/?] n
+Check for low memory corruption (X86_CHECK_BIOS_CORRUPTION) [Y/n/?] y
+  Set the default setting of memory_corruption_check (X86_BOOTPARAM_MEMORY_CORRUPTION_CHECK) [Y/n/?] y
+Amount of low memory, in kilobytes, to reserve for the BIOS (X86_RESERVE_LOW) [64] 64
+MTRR (Memory Type Range Register) support (MTRR) [Y/?] y
+  MTRR cleanup support (MTRR_SANITIZER) [N/y/?] n
+Intel MPX (Memory Protection Extensions) (X86_INTEL_MPX) [N/y/?] n
+Intel Memory Protection Keys (X86_INTEL_MEMORY_PROTECTION_KEYS) [Y/n/?] y
+EFI runtime service support (EFI) [Y/n/?] y
+  EFI stub support (EFI_STUB) [N/y/?] n
+Enable seccomp to safely compute untrusted bytecode (SECCOMP) [Y/n/?] y
+Timer frequency
+  1. 100 HZ (HZ_100)
+  2. 250 HZ (HZ_250)
+  3. 300 HZ (HZ_300)
+> 4. 1000 HZ (HZ_1000)
+choice[1-4?]: 4
+kexec system call (KEXEC) [Y/n/?] y
+kexec file based system call (KEXEC_FILE) [N/y/?] n
+kernel crash dumps (CRASH_DUMP) [Y/n/?] y
+kexec jump (KEXEC_JUMP) [N/y/?] n
+Physical address where the kernel is loaded (PHYSICAL_START) [0x1000000] 0x1000000
+Build a relocatable kernel (RELOCATABLE) [Y/n/?] y
+  Randomize the address of the kernel image (KASLR) (RANDOMIZE_BASE) [N/y/?] n
+Alignment value to which kernel should be aligned (PHYSICAL_ALIGN) [0x200000] 0x200000
+Support for hot-pluggable CPUs (HOTPLUG_CPU) [Y/?] y
+  Set default setting of cpu0_hotpluggable (BOOTPARAM_HOTPLUG_CPU0) [N/y/?] n
+  Debug CPU0 hotplug (DEBUG_HOTPLUG_CPU0) [N/y/?] n
+Disable the 32-bit vDSO (needed for glibc 2.3.3) (COMPAT_VDSO) [N/y/?] n
+vsyscall table for legacy applications
+  1. Native (LEGACY_VSYSCALL_NATIVE)
+> 2. Emulate (LEGACY_VSYSCALL_EMULATE)
+  3. None (LEGACY_VSYSCALL_NONE)
+choice[1-3?]: 2
+Built-in kernel command line (CMDLINE_BOOL) [N/y/?] n
+*
+* Plan 9 Resource Sharing Support (9P2000)
+*
+Plan 9 Resource Sharing Support (9P2000) (NET_9P) [Y/n/m/?] y
+  9P Virtio Transport (NET_9P_VIRTIO) [Y/n/m/?] y
+  Debug information (NET_9P_DEBUG) [N/y/?] (NEW) 
+*
+* SCSI low-level drivers
+*
+SCSI low-level drivers (SCSI_LOWLEVEL) [Y/n] y
+  iSCSI Initiator over TCP/IP (ISCSI_TCP) [N/m/y/?] (NEW) 
+  iSCSI Boot Sysfs Interface (ISCSI_BOOT_SYSFS) [N/m/y/?] (NEW) 
+  Chelsio T3 iSCSI support (SCSI_CXGB3_ISCSI) [N/m/y/?] (NEW) 
+  Chelsio T4 iSCSI support (SCSI_CXGB4_ISCSI) [N/m/y/?] (NEW) 
+  QLogic NetXtreme II iSCSI support (SCSI_BNX2_ISCSI) [N/m/y/?] (NEW) 
+  Emulex 10Gbps iSCSI - BladeEngine 2 (BE2ISCSI) [N/m/y/?] (NEW) 
+  3ware 5/6/7/8xxx ATA-RAID support (BLK_DEV_3W_XXXX_RAID) [N/m/y/?] (NEW) 
+  HP Smart Array SCSI driver (SCSI_HPSA) [N/m/y/?] (NEW) 
+  3ware 9xxx SATA-RAID support (SCSI_3W_9XXX) [N/m/y/?] (NEW) 
+  3ware 97xx SAS/SATA-RAID support (SCSI_3W_SAS) [N/m/y/?] (NEW) 
+  ACARD SCSI support (SCSI_ACARD) [N/m/y/?] (NEW) 
+  Adaptec AACRAID support (SCSI_AACRAID) [N/m/y/?] (NEW) 
+  Adaptec AIC7xxx Fast -> U160 support (New Driver) (SCSI_AIC7XXX) [N/m/y/?] (NEW) 
+  Adaptec AIC79xx U320 support (SCSI_AIC79XX) [N/m/y/?] (NEW) 
+  Adaptec AIC94xx SAS/SATA support (SCSI_AIC94XX) [N/m/y/?] (NEW) 
+  Marvell 88SE64XX/88SE94XX SAS/SATA support (SCSI_MVSAS) [N/m/y/?] (NEW) 
+  Marvell UMI driver (SCSI_MVUMI) [N/m/y/?] (NEW) 
+  Adaptec I2O RAID support  (SCSI_DPT_I2O) [N/m/y/?] (NEW) 
+  AdvanSys SCSI support (SCSI_ADVANSYS) [N/m/y/?] (NEW) 
+  ARECA (ARC11xx/12xx/13xx/16xx) SATA/SAS RAID Host Adapter (SCSI_ARCMSR) [N/m/y/?] (NEW) 
+  ATTO Technology's ExpressSAS RAID adapter driver (SCSI_ESAS2R) [N/m/y/?] (NEW) 
+  LSI Logic New Generation RAID Device Drivers (MEGARAID_NEWGEN) [N/y/?] (NEW) 
+  LSI Logic Legacy MegaRAID Driver (MEGARAID_LEGACY) [N/m/y/?] (NEW) 
+  LSI Logic MegaRAID SAS RAID Module (MEGARAID_SAS) [N/m/y/?] (NEW) 
+  LSI MPT Fusion SAS 3.0 & SAS 2.0 Device Driver (SCSI_MPT3SAS) [N/m/y/?] (NEW) 
+  Legacy MPT2SAS config option (SCSI_MPT2SAS) [N/m/y/?] (NEW) 
+  Microsemi PQI Driver (SCSI_SMARTPQI) [N/m/y/?] (NEW) 
+  Universal Flash Storage Controller Driver Core (SCSI_UFSHCD) [N/m/y/?] (NEW) 
+  HighPoint RocketRAID 3xxx/4xxx Controller support (SCSI_HPTIOP) [N/m/y/?] (NEW) 
+  BusLogic SCSI support (SCSI_BUSLOGIC) [N/m/y/?] (NEW) 
+  VMware PVSCSI driver support (VMWARE_PVSCSI) [N/m/y/?] (NEW) 
+  Cisco SNIC Driver (SCSI_SNIC) [N/m/y/?] (NEW) 
+  DMX3191D SCSI support (SCSI_DMX3191D) [N/m/y/?] (NEW) 
+  EATA ISA/EISA/PCI (DPT and generic EATA/DMA-compliant boards) support (SCSI_EATA) [N/m/y/?] (NEW) 
+  Future Domain 16xx SCSI/AHA-2920A support (SCSI_FUTURE_DOMAIN) [N/m/y/?] (NEW) 
+  Intel/ICP (former GDT SCSI Disk Array) RAID Controller support (SCSI_GDTH) [N/m/y/?] (NEW) 
+  Intel(R) C600 Series Chipset SAS Controller (SCSI_ISCI) [N/m/y/?] (NEW) 
+  IBM ServeRAID support (SCSI_IPS) [N/m/y/?] (NEW) 
+  Initio 9100U(W) support (SCSI_INITIO) [N/m/y/?] (NEW) 
+  Initio INI-A100U2W support (SCSI_INIA100) [N/m/y/?] (NEW) 
+  Promise SuperTrak EX Series support (SCSI_STEX) [N/m/y/?] (NEW) 
+  SYM53C8XX Version 2 SCSI support (SCSI_SYM53C8XX_2) [N/m/y/?] (NEW) 
+  IBM Power Linux RAID adapter support (SCSI_IPR) [N/m/y/?] (NEW) 
+  Qlogic QLA 1240/1x80/1x160 SCSI support (SCSI_QLOGIC_1280) [N/m/y/?] (NEW) 
+  QLogic ISP4XXX and ISP82XX host adapter family support (SCSI_QLA_ISCSI) [N/m/y/?] (NEW) 
+  Tekram DC395(U/UW/F) and DC315(U) SCSI support (SCSI_DC395x) [N/m/y/?] (NEW) 
+  Tekram DC390(T) and Am53/79C974 SCSI support (new driver) (SCSI_AM53C974) [N/m/y/?] (NEW) 
+  Western Digital WD7193/7197/7296 support (SCSI_WD719X) [N/m/y/?] (NEW) 
+  SCSI debugging host and device simulator (SCSI_DEBUG) [N/m/y/?] (NEW) 
+  PMC SIERRA Linux MaxRAID adapter support (SCSI_PMCRAID) [N/m/y/?] (NEW) 
+  PMC-Sierra SPC 8001 SAS/SATA Based Host Adapter driver (SCSI_PM8001) [N/m/y/?] (NEW) 
+  virtio-scsi support (SCSI_VIRTIO) [Y/n/m/?] y
+*
+* Mice
+*
+Mice (INPUT_MOUSE) [Y/n/?] y
+  PS/2 mouse (MOUSE_PS2) [Y/n/m/?] y
+    Elantech PS/2 protocol extension (MOUSE_PS2_ELANTECH) [N/y/?] n
+    Sentelic Finger Sensing Pad PS/2 protocol extension (MOUSE_PS2_SENTELIC) [N/y/?] n
+    eGalax TouchKit PS/2 protocol extension (MOUSE_PS2_TOUCHKIT) [N/y/?] n
+    Virtual mouse (vmmouse) (MOUSE_PS2_VMMOUSE) [N/y/?] (NEW) 
+  Serial mouse (MOUSE_SERIAL) [N/m/y/?] n
+  Apple USB Touchpad support (MOUSE_APPLETOUCH) [N/m/y/?] n
+  Apple USB BCM5974 Multitouch trackpad support (MOUSE_BCM5974) [N/m/y/?] n
+  Cypress APA I2C Trackpad support (MOUSE_CYAPA) [N/m/y/?] n
+  ELAN I2C Touchpad support (MOUSE_ELAN_I2C) [N/m/y/?] n
+  DEC VSXXX-AA/GA mouse and VSXXX-AB tablet (MOUSE_VSXXXAA) [N/m/y/?] n
+  Synaptics I2C Touchpad support (MOUSE_SYNAPTICS_I2C) [N/m/y/?] n
+  Synaptics USB device support (MOUSE_SYNAPTICS_USB) [N/m/y/?] n
+*
+* Hardware Random Number Generator Core support
+*
+Hardware Random Number Generator Core support (HW_RANDOM) [Y/n/m/?] y
+  Timer IOMEM HW Random Number Generator support (HW_RANDOM_TIMERIOMEM) [N/m/y/?] n
+  Intel HW Random Number Generator support (HW_RANDOM_INTEL) [N/m/y/?] n
+  AMD HW Random Number Generator support (HW_RANDOM_AMD) [N/m/y/?] n
+  VIA HW Random Number Generator support (HW_RANDOM_VIA) [Y/n/m/?] y
+  VirtIO Random Number Generator support (HW_RANDOM_VIRTIO) [N/m/y/?] (NEW) 
+*
+* Virtio drivers
+*
+PCI driver for virtio devices (VIRTIO_PCI) [Y/n/m/?] y
+  Support for legacy virtio draft 0.9.X and older devices (VIRTIO_PCI_LEGACY) [Y/n/?] (NEW) 
+Virtio balloon driver (VIRTIO_BALLOON) [N/m/y/?] (NEW) 
+Virtio input driver (VIRTIO_INPUT) [Y/n/m/?] y
+Platform bus driver for memory mapped virtio devices (VIRTIO_MMIO) [N/m/y/?] n
+*
+* Microsoft Hyper-V guest support
+*
+Microsoft Hyper-V client drivers (HYPERV) [N/m/y/?] (NEW) 
+*
+* Network File Systems
+*
+Network File Systems (NETWORK_FILESYSTEMS) [Y/n/?] y
+  NFS client support (NFS_FS) [Y/n/m/?] y
+    NFS client support for NFS version 2 (NFS_V2) [Y/n/m/?] y
+    NFS client support for NFS version 3 (NFS_V3) [Y/n/m/?] y
+      NFS client support for the NFSv3 ACL protocol extension (NFS_V3_ACL) [Y/n/?] y
+    NFS client support for NFS version 4 (NFS_V4) [Y/n/m/?] y
+    Provide swap over NFS support (NFS_SWAP) [N/y/?] n
+  NFS client support for NFSv4.1 (NFS_V4_1) [N/y/?] n
+  Root file system on NFS (ROOT_NFS) [Y/n/?] y
+  Use the legacy NFS DNS resolver (NFS_USE_LEGACY_DNS) [N/y/?] n
+  NFS server support (NFSD) [N/m/y/?] n
+  RPC: Enable dprintk debugging (SUNRPC_DEBUG) [N/y/?] n
+  Ceph distributed file system (CEPH_FS) [N/m/y/?] n
+  CIFS support (advanced network filesystem, SMBFS successor) (CIFS) [N/m/y/?] n
+  NCP file system support (to mount NetWare volumes) (NCP_FS) [N/m/y/?] n
+  Coda file system support (advanced network fs) (CODA_FS) [N/m/y/?] n
+  Andrew File System support (AFS) (AFS_FS) [N/m/y/?] n
+  Plan 9 Resource Sharing Support (9P2000) (9P_FS) [Y/n/m/?] y
+    9P POSIX Access Control Lists (9P_FS_POSIX_ACL) [N/y/?] (NEW) 
+    9P Security Labels (9P_FS_SECURITY) [N/y/?] (NEW) 
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/researcher/paper02/build/work/objects/common-config'
+make: Leaving directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'
+make: Entering directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'
+make[1]: Entering directory '/home/researcher/paper02/build/work/objects/common-config'
+  GEN     ./Makefile
+scripts/kconfig/conf  --olddefconfig Kconfig
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/researcher/paper02/build/work/objects/common-config'
+make: Leaving directory '/home/researcher/paper02/build/work/sources/cfs-69973b830859bc6529a7a0468ba0d80ee5117826'

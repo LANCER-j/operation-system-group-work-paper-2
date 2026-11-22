@@ -1,0 +1,55 @@
+{
+  "buffer_kb_per_cpu": 65536,
+  "cpu": 0,
+  "cpu_stats": {
+    "bytes": "33696",
+    "commit overrun": "0",
+    "dropped events": "0",
+    "entries": "503",
+    "now ts": "1009.170287",
+    "oldest event ts": "1006.455934",
+    "overrun": "0",
+    "read events": "0"
+  },
+  "end_monotonic": 1009.168977629,
+  "includes_interrupt_and_possible_guest_steal_time": true,
+  "initial_tids": {
+    "fibo": [
+      28284
+    ]
+  },
+  "instance": "/sys/kernel/debug/tracing/instances/paper02_28189_cb8ceea0",
+  "interval": 0.1,
+  "measurement": "scheduled_residency_seconds",
+  "origin_monotonic": 1006.454315626,
+  "parser": {
+    "comm_mismatches": {
+      "28284:python3": 1
+    },
+    "first_event_time": 1006.455934,
+    "first_switch_time": 1006.457086,
+    "fork_events": 8,
+    "includes_interrupt_and_possible_guest_steal_time": true,
+    "last_event_time": 1009.168936,
+    "last_switch_time": 1009.168936,
+    "learned_tids": {
+      "28284": "fibo"
+    },
+    "matched_intervals": 177,
+    "measurement": "scheduled_residency_seconds",
+    "switch_events": 476,
+    "total_residency_s": {
+      "fibo": 2.44642100000101,
+      "mysql": 0.0,
+      "sysbench": 0.0
+    }
+  },
+  "recording_started_monotonic": 1006.454288926,
+  "recording_stopped_monotonic": 1009.16933773,
+  "roots": {
+    "fibo": 28284
+  },
+  "status": "completed",
+  "trace_clock": "local global counter uptime perf [mono] mono_raw boot x86-tsc",
+  "tracing_cpumask": "1"
+}
