@@ -1,0 +1,632 @@
+{
+  "comparisons": [
+    {
+      "at_least_three_runs_each": true,
+      "both_schedulers_present": true,
+      "condition_id": "76b127e1e67e",
+      "matching_parameters": true,
+      "parameters": {
+        "accounting": "trace",
+        "cpu": 0,
+        "events": 10000,
+        "fibo_n": 40,
+        "fibo_repeats": 100,
+        "interval": 0.1,
+        "lead_seconds": 7.0,
+        "lua": "/usr/share/sysbench/oltp_read_write.lua",
+        "runs": 3,
+        "seed": 1,
+        "setup_timeout": 600,
+        "smoke": false,
+        "table_size": 10000,
+        "threads": 80,
+        "timeout": 1800
+      },
+      "schedulers": {
+        "cfs": {
+          "at_least_three_runs": true,
+          "fibo_outlasts_sysbench_in_all_runs": false,
+          "metrics": {
+            "fibo_residency_s_in_overlap": {
+              "mean": 13.684965346362645,
+              "n": 3,
+              "sample_stddev": 0.19869743109508872
+            },
+            "fibo_residency_share_in_overlap": {
+              "mean": 0.4911302697903595,
+              "n": 3,
+              "sample_stddev": 0.00943200118732493
+            },
+            "fibo_total_residency_s": {
+              "mean": 20.67317533333351,
+              "n": 3,
+              "sample_stddev": 0.20230156287235482
+            },
+            "fibo_wall_s": {
+              "mean": 34.816543139333334,
+              "n": 3,
+              "sample_stddev": 0.39772238430246143
+            },
+            "latency_avg_ms": {
+              "mean": 232.26666666666668,
+              "n": 3,
+              "sample_stddev": 4.037280437786478
+            },
+            "longest_flat_sampled_interval_s": {
+              "mean": 0.025939959333333224,
+              "n": 3,
+              "sample_stddev": 0.023644692738627623
+            },
+            "sysbench_total_s": {
+              "mean": 29.076266666666665,
+              "n": 3,
+              "sample_stddev": 0.5120890677736952
+            },
+            "transactions_per_s": {
+              "mean": 343.98333333333335,
+              "n": 3,
+              "sample_stddev": 6.070669924590977
+            }
+          },
+          "n": 3
+        },
+        "ule": {
+          "at_least_three_runs": true,
+          "fibo_outlasts_sysbench_in_all_runs": true,
+          "metrics": {
+            "fibo_residency_s_in_overlap": {
+              "mean": 0.3475542631571094,
+              "n": 3,
+              "sample_stddev": 0.1563854169871639
+            },
+            "fibo_residency_share_in_overlap": {
+              "mean": 0.016279808339252064,
+              "n": 3,
+              "sample_stddev": 0.007470497125813092
+            },
+            "fibo_total_residency_s": {
+              "mean": 21.00230633333334,
+              "n": 3,
+              "sample_stddev": 0.07276178869648252
+            },
+            "fibo_wall_s": {
+              "mean": 42.161173322,
+              "n": 3,
+              "sample_stddev": 0.5765965050463807
+            },
+            "latency_avg_ms": {
+              "mean": 169.36333333333334,
+              "n": 3,
+              "sample_stddev": 2.6333691980680047
+            },
+            "longest_flat_sampled_interval_s": {
+              "mean": 5.233333333333334,
+              "n": 3,
+              "sample_stddev": 0.6658328118479395
+            },
+            "sysbench_total_s": {
+              "mean": 21.241433333333333,
+              "n": 3,
+              "sample_stddev": 0.31004984007951597
+            },
+            "transactions_per_s": {
+              "mean": 470.8233333333333,
+              "n": 3,
+              "sample_stddev": 6.83271785846112
+            }
+          },
+          "n": 3
+        }
+      },
+      "ule_relative_to_cfs": {
+        "fibo_residency_share_percentage_point_change": -47.48504614511074,
+        "latency_avg_ms_percent_change": -27.08237657864524,
+        "sysbench_total_s_percent_change": -26.945802303826262,
+        "transactions_per_s_percent_change": 36.87387954842774
+      }
+    },
+    {
+      "at_least_three_runs_each": false,
+      "both_schedulers_present": false,
+      "condition_id": "522f127c5a04",
+      "matching_parameters": true,
+      "parameters": {
+        "accounting": "trace",
+        "cpu": 0,
+        "events": 10000,
+        "fibo_n": 40,
+        "fibo_repeats": 100,
+        "interval": 0.1,
+        "lead_seconds": 7.0,
+        "lua": "/usr/share/sysbench/oltp_read_write.lua",
+        "runs": 3,
+        "seed": 1,
+        "setup_timeout": 600,
+        "smoke": false,
+        "table_size": 10000,
+        "threads": 40,
+        "timeout": 1800
+      },
+      "schedulers": {
+        "cfs": {
+          "at_least_three_runs": false,
+          "fibo_outlasts_sysbench_in_all_runs": false,
+          "metrics": {
+            "fibo_residency_s_in_overlap": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "fibo_residency_share_in_overlap": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "fibo_total_residency_s": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "fibo_wall_s": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "latency_avg_ms": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "longest_flat_sampled_interval_s": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "sysbench_total_s": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            },
+            "transactions_per_s": {
+              "mean": null,
+              "n": 0,
+              "sample_stddev": null
+            }
+          },
+          "n": 0
+        },
+        "ule": {
+          "at_least_three_runs": true,
+          "fibo_outlasts_sysbench_in_all_runs": true,
+          "metrics": {
+            "fibo_residency_s_in_overlap": {
+              "mean": 0.30564736787515184,
+              "n": 3,
+              "sample_stddev": 0.11817767345951478
+            },
+            "fibo_residency_share_in_overlap": {
+              "mean": 0.017680268077165374,
+              "n": 3,
+              "sample_stddev": 0.006585911843796167
+            },
+            "fibo_total_residency_s": {
+              "mean": 21.011194999999816,
+              "n": 3,
+              "sample_stddev": 0.034192205616924216
+            },
+            "fibo_wall_s": {
+              "mean": 37.961977689,
+              "n": 3,
+              "sample_stddev": 0.24145225179323274
+            },
+            "latency_avg_ms": {
+              "mean": 68.19333333333333,
+              "n": 3,
+              "sample_stddev": 1.3597548798711212
+            },
+            "longest_flat_sampled_interval_s": {
+              "mean": 3.6666666666666674,
+              "n": 3,
+              "sample_stddev": 1.0692676621563624
+            },
+            "sysbench_total_s": {
+              "mean": 17.075833333333332,
+              "n": 3,
+              "sample_stddev": 0.33331028086954245
+            },
+            "transactions_per_s": {
+              "mean": 585.7366666666667,
+              "n": 3,
+              "sample_stddev": 11.517205969041882
+            }
+          },
+          "n": 3
+        }
+      },
+      "ule_relative_to_cfs": null
+    }
+  ],
+  "excluded_runs": [],
+  "formal_run_count": 9,
+  "interpretation_limits": [
+    "Residency is reconstructed from sched_switch and can include interrupts or guest descheduling.",
+    "Linear interpolation estimates boundary values within recorded sampling intervals.",
+    "Flat intervals are bounded observations at the configured sampling resolution, normally 0.1 s; they do not prove unbounded starvation.",
+    "Observed completion timestamps include polling delay. Residency/flat metrics end at the earlier workload exit; full Sysbench throughput can include a later phase without Fibo when coverage is false.",
+    "Matching parameters do not independently certify identical binaries, hardware, or background load."
+  ],
+  "paper_reference": {
+    "cfs": {
+      "fibo_runtime_s_as_published": 160,
+      "latency_avg_ms": 441,
+      "sysbench_completion_s_in_text": 235,
+      "transactions_per_s": 290
+    },
+    "directly_comparable": false,
+    "label": "not_directly_comparable",
+    "location": "Section 5.1, Table 2 (printed p.90), Figure 1 (printed p.91)",
+    "reason": "Hardware, workload details, software configuration, virtualization and timing definitions differ or were not fully specified. No percent replication error is inferred.",
+    "source": "https://www.usenix.org/system/files/conference/atc18/atc18-bouron.pdf",
+    "ule": {
+      "fibo_runtime_s_as_published": 158,
+      "latency_avg_ms": 125,
+      "sysbench_completion_s_in_text": 143,
+      "transactions_per_s": 532
+    },
+    "value_type": "published_reference_not_reproduced_measurement"
+  },
+  "runs": [
+    {
+      "condition_id": "76b127e1e67e",
+      "fibo_alive_for_entire_sysbench_window": false,
+      "fibo_residency_s_in_overlap": 13.636226705928928,
+      "fibo_residency_share_in_overlap": 0.49727700351406007,
+      "fibo_total_residency_s": 20.625191000000008,
+      "fibo_wall_s": 34.3645582,
+      "kernel_release": "4.9.0-paper02-cfs",
+      "latency_avg_ms": 228.06,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 34.4315336,
+        "seconds": 0.03153360000000305,
+        "start_elapsed_s": 34.4
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/cfs-main/CFS_r01",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "cfs",
+      "status": "completed",
+      "sysbench_total_s": 28.5468,
+      "transactions": 10000,
+      "transactions_per_s": 350.29,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 20.625191000000008,
+        "cumulative_start_s": 6.98896429407108,
+        "duration_s": 27.421792300000007,
+        "end_elapsed_s": 34.4315336,
+        "fibo_end_elapsed_s": 34.4315336,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.009741299999995,
+        "sysbench_end_elapsed_s": 36.05318273699999
+      }
+    },
+    {
+      "condition_id": "76b127e1e67e",
+      "fibo_alive_for_entire_sysbench_window": false,
+      "fibo_residency_s_in_overlap": 13.515172162938114,
+      "fibo_residency_share_in_overlap": 0.48027063971724154,
+      "fibo_total_residency_s": 20.499179999999626,
+      "fibo_wall_s": 35.113000536,
+      "kernel_release": "4.9.0-paper02-cfs",
+      "latency_avg_ms": 236.11,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": null,
+        "seconds": 0.0,
+        "start_elapsed_s": null
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/cfs-main/CFS_r02",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "cfs",
+      "status": "completed",
+      "sysbench_total_s": 29.569,
+      "transactions": 10000,
+      "transactions_per_s": 338.18,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 20.496188251932573,
+        "cumulative_start_s": 6.9810160889944575,
+        "duration_s": 28.140742000999992,
+        "end_elapsed_s": 35.14801691699999,
+        "fibo_end_elapsed_s": 35.14801691699999,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.007274916,
+        "sysbench_end_elapsed_s": 36.869092794
+      }
+    },
+    {
+      "condition_id": "76b127e1e67e",
+      "fibo_alive_for_entire_sysbench_window": false,
+      "fibo_residency_s_in_overlap": 13.903497170220891,
+      "fibo_residency_share_in_overlap": 0.4958431661397769,
+      "fibo_total_residency_s": 20.895155000000898,
+      "fibo_wall_s": 34.972070682,
+      "kernel_release": "4.9.0-paper02-cfs",
+      "latency_avg_ms": 232.63,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 35.046286278,
+        "seconds": 0.04628627799999663,
+        "start_elapsed_s": 35.0
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/cfs-main/CFS_r03",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "cfs",
+      "status": "completed",
+      "sysbench_total_s": 29.113,
+      "transactions": 10000,
+      "transactions_per_s": 343.48,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 20.895155000000898,
+        "cumulative_start_s": 6.9916578297800065,
+        "duration_s": 28.040110502000005,
+        "end_elapsed_s": 35.046286278,
+        "fibo_end_elapsed_s": 35.046286278,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.006175775999992,
+        "sysbench_end_elapsed_s": 36.466821181
+      }
+    },
+    {
+      "condition_id": "76b127e1e67e",
+      "fibo_alive_for_entire_sysbench_window": true,
+      "fibo_residency_s_in_overlap": 0.1688043129271657,
+      "fibo_residency_share_in_overlap": 0.0077243199574751524,
+      "fibo_total_residency_s": 21.085372999999862,
+      "fibo_wall_s": 42.823928031,
+      "kernel_release": "4.9.0-paper02-ule",
+      "latency_avg_ms": 172.31,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 13.100000000000001,
+        "seconds": 6.000000000000001,
+        "start_elapsed_s": 7.1000000000000005
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/ule-main/ULE_r01",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000053
+      },
+      "scheduler": "ule",
+      "status": "completed",
+      "sysbench_total_s": 21.5853,
+      "transactions": 10000,
+      "transactions_per_s": 463.26,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 7.153717863806337,
+        "cumulative_start_s": 6.984913550879171,
+        "duration_s": 21.853614797999995,
+        "end_elapsed_s": 28.864791998,
+        "fibo_end_elapsed_s": 42.923869409000005,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.011177200000006,
+        "sysbench_end_elapsed_s": 28.864791998
+      }
+    },
+    {
+      "condition_id": "76b127e1e67e",
+      "fibo_alive_for_entire_sysbench_window": true,
+      "fibo_residency_s_in_overlap": 0.414731488029239,
+      "fibo_residency_share_in_overlap": 0.01960306773783533,
+      "fibo_total_residency_s": 20.97169199999992,
+      "fibo_wall_s": 41.774744388,
+      "kernel_release": "4.9.0-paper02-ule",
+      "latency_avg_ms": 167.24,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 13.200000000000001,
+        "seconds": 4.9,
+        "start_elapsed_s": 8.3
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/ule-main/ULE_r02",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "ule",
+      "status": "completed",
+      "sysbench_total_s": 20.9832,
+      "transactions": 10000,
+      "transactions_per_s": 476.55,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 7.403494030436231,
+        "cumulative_start_s": 6.988762542406992,
+        "duration_s": 21.156458446999977,
+        "end_elapsed_s": 28.174453754999988,
+        "fibo_end_elapsed_s": 41.81272402200001,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.01799530800001,
+        "sysbench_end_elapsed_s": 28.174453754999988
+      }
+    },
+    {
+      "condition_id": "76b127e1e67e",
+      "fibo_alive_for_entire_sysbench_window": true,
+      "fibo_residency_s_in_overlap": 0.4591269885149236,
+      "fibo_residency_share_in_overlap": 0.02151203732244571,
+      "fibo_total_residency_s": 20.949854000000244,
+      "fibo_wall_s": 41.884847547,
+      "kernel_release": "4.9.0-paper02-ule",
+      "latency_avg_ms": 168.54,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 13.200000000000001,
+        "seconds": 4.800000000000001,
+        "start_elapsed_s": 8.4
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/ule-main/ULE_r03",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "ule",
+      "status": "completed",
+      "sysbench_total_s": 21.1558,
+      "transactions": 10000,
+      "transactions_per_s": 472.66,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 7.44549389736266,
+        "cumulative_start_s": 6.986366908847736,
+        "duration_s": 21.342794345000016,
+        "end_elapsed_s": 28.35297086600002,
+        "fibo_end_elapsed_s": 41.985574407,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.010176521000005,
+        "sysbench_end_elapsed_s": 28.35297086600002
+      }
+    },
+    {
+      "condition_id": "522f127c5a04",
+      "fibo_alive_for_entire_sysbench_window": true,
+      "fibo_residency_s_in_overlap": 0.37292847253628647,
+      "fibo_residency_share_in_overlap": 0.021302715583990547,
+      "fibo_total_residency_s": 21.010539999999367,
+      "fibo_wall_s": 38.205883335,
+      "kernel_release": "4.9.0-paper02-ule",
+      "latency_avg_ms": 69.36,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 10.200000000000001,
+        "seconds": 3.1000000000000005,
+        "start_elapsed_s": 7.1000000000000005
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/ule-extension40/ULE_r01",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "ule",
+      "status": "completed",
+      "sysbench_total_s": 17.3601,
+      "transactions": 10000,
+      "transactions_per_s": 576.0,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 7.355188689625812,
+        "cumulative_start_s": 6.982260217089525,
+        "duration_s": 17.50614709499996,
+        "end_elapsed_s": 24.52059478199999,
+        "fibo_end_elapsed_s": 38.26318050399999,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.014447687000029,
+        "sysbench_end_elapsed_s": 24.52059478199999
+      }
+    },
+    {
+      "condition_id": "522f127c5a04",
+      "fibo_alive_for_entire_sysbench_window": true,
+      "fibo_residency_s_in_overlap": 0.37482170853673225,
+      "fibo_residency_share_in_overlap": 0.02165978178624206,
+      "fibo_total_residency_s": 20.977335000000778,
+      "fibo_wall_s": 37.956993737,
+      "kernel_release": "4.9.0-paper02-ule",
+      "latency_avg_ms": 68.52,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 10.100000000000001,
+        "seconds": 3.000000000000001,
+        "start_elapsed_s": 7.1000000000000005
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/ule-extension40/ULE_r02",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "ule",
+      "status": "completed",
+      "sysbench_total_s": 17.1584,
+      "transactions": 10000,
+      "transactions_per_s": 582.76,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 7.361524091285142,
+        "cumulative_start_s": 6.98670238274841,
+        "duration_s": 17.30496235999999,
+        "end_elapsed_s": 24.313594287,
+        "fibo_end_elapsed_s": 38.057862242,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.00863192700001,
+        "sysbench_end_elapsed_s": 24.313594287
+      }
+    },
+    {
+      "condition_id": "522f127c5a04",
+      "fibo_alive_for_entire_sysbench_window": true,
+      "fibo_residency_s_in_overlap": 0.16919192255243676,
+      "fibo_residency_share_in_overlap": 0.010078306861263514,
+      "fibo_total_residency_s": 21.045709999999303,
+      "fibo_wall_s": 37.723055995,
+      "kernel_release": "4.9.0-paper02-ule",
+      "latency_avg_ms": 66.7,
+      "longest_flat_sampled_interval": {
+        "end_elapsed_s": 18.1,
+        "seconds": 4.9,
+        "start_elapsed_s": 13.200000000000001
+      },
+      "measurement": "scheduled_residency_seconds",
+      "run": "/home/researcher/paper02/results/ule-extension40/ULE_r03",
+      "sampling": {
+        "configured_interval_s": 0.1,
+        "max_csv_step_s": 0.10000000000000142,
+        "median_csv_step_s": 0.10000000000000009
+      },
+      "scheduler": "ule",
+      "status": "completed",
+      "sysbench_total_s": 16.709,
+      "transactions": 10000,
+      "transactions_per_s": 598.45,
+      "window": {
+        "boundary_method": "piecewise_linear_interpolation",
+        "bounds_source": "run.json: Sysbench launch to min(Fibo end, Sysbench end)",
+        "cumulative_end_s": 7.153972292177948,
+        "cumulative_start_s": 6.984780369625511,
+        "duration_s": 16.78773278899996,
+        "end_elapsed_s": 23.79966961599996,
+        "fibo_end_elapsed_s": 37.74557897899996,
+        "scope": "joint_alive_period",
+        "start_elapsed_s": 7.0119368269999995,
+        "sysbench_end_elapsed_s": 23.79966961599996
+      }
+    }
+  ],
+  "status": "analyzed"
+}

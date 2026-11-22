@@ -1,0 +1,23 @@
+--- a/kernel/sched/sched_ktz.c
++++ b/kernel/sched/sched_ktz.c
+@@ -137,7 +137,10 @@
+ static struct sched_domain *get_top_domain(int cpu)
+ {
+ 	struct sched_domain *curr = rcu_dereference(per_cpu(sd_llc, cpu));
+-	while (curr->parent) {
++	/* Some virtual topologies have no shared-cache domain. */
++	if (!curr)
++		curr = rcu_dereference(cpu_rq(cpu)->sd);
++	while (curr && curr->parent) {
+ 		curr = curr->parent;
+ 	}
+ 	return curr;
+@@ -1476,6 +1479,8 @@
+ 	this_cpu = smp_processor_id();
+ 	pri = p->ktz_prio;
+ 	root_domain = get_top_domain(this_cpu);
++	if (!root_domain)
++		return curr_cpu; /* The core validates affinity and CPU availability. */
+ 	this_tdq = TDQ(cpu_rq(this_cpu));
+ 	
+ 	/*

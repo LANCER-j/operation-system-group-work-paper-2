@@ -1,0 +1,20 @@
+{
+  "purpose": "trace validation on build kernel, not paper result",
+  "process": {
+    "n": 40,
+    "repeats": 10,
+    "checksum": 1023341550,
+    "cpu_seconds": 2.445913571,
+    "wall_seconds": 2.70161417
+  },
+  "trace": {
+    "elapsed_s": 2.714662002999944,
+    "fibo_cpu_s": 2.44642100000101,
+    "fibo_state": "trace",
+    "mysql_cpu_s": 0.0,
+    "mysql_state": "not_started",
+    "sysbench_cpu_s": 0.0,
+    "sysbench_state": "not_started",
+    "database_cpu_s": 0.0
+  }
+}

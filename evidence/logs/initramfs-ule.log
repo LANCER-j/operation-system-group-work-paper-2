@@ -1,0 +1,7 @@
+bzImage: OK
+System.map: OK
+config: OK
+modules-4.9.0-paper02-ule.tar.gz: OK
+W: mkconf: MD subsystem is not loaded, thus I cannot scan for arrays.
+W: mdadm: failed to auto-generate temporary mdadm.conf file.
+已生成：/home/researcher/paper02/build/work/artifacts/ule/initrd.img。尚未证明该内核能够启动。

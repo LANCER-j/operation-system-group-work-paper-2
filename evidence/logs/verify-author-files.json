@@ -1,0 +1,126 @@
+{
+  "upstream_commit": "69973b830859bc6529a7a0468ba0d80ee5117826",
+  "author_commit": "8e76f4826daadebce6e7f5fe9cbd48823fd403a0",
+  "checks": [
+    {
+      "path": "include/linux/init_task.h",
+      "expected_blob": "14698bdea0bff7119811bbb320b6195554d2c58f",
+      "actual_blob": "14698bdea0bff7119811bbb320b6195554d2c58f",
+      "match": true
+    },
+    {
+      "path": "include/linux/log2.h",
+      "expected_blob": "f38fae23bdac52977e563b33625da1fec8b76a7b",
+      "actual_blob": "f38fae23bdac52977e563b33625da1fec8b76a7b",
+      "match": true
+    },
+    {
+      "path": "include/linux/sched.h",
+      "expected_blob": "a674ca3c7dabf748a81e75f7d2ab2c56ef4b2ce7",
+      "actual_blob": "a674ca3c7dabf748a81e75f7d2ab2c56ef4b2ce7",
+      "match": true
+    },
+    {
+      "path": "include/linux/sched/runq.h",
+      "expected_blob": "b75155f212b3719d54b410d8f224d7bdd04327f6",
+      "actual_blob": "b75155f212b3719d54b410d8f224d7bdd04327f6",
+      "match": true
+    },
+    {
+      "path": "include/linux/sched/sysctl.h",
+      "expected_blob": "b249fba201fa42bf798fe0fd215f33598b345149",
+      "actual_blob": "b249fba201fa42bf798fe0fd215f33598b345149",
+      "match": true
+    },
+    {
+      "path": "include/trace/events/sched.h",
+      "expected_blob": "f9622344791c1d9b2507f4982c9d662aff984491",
+      "actual_blob": "f9622344791c1d9b2507f4982c9d662aff984491",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/Makefile",
+      "expected_blob": "7908ec2edc78c7e0d85c66ded89da7a2dc7fd237",
+      "actual_blob": "7908ec2edc78c7e0d85c66ded89da7a2dc7fd237",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/core.c",
+      "expected_blob": "57ce22926d3dfa677414d09884bfaabfc773a9ca",
+      "actual_blob": "57ce22926d3dfa677414d09884bfaabfc773a9ca",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/cpu_search.c",
+      "expected_blob": "f31eeeb973e6cd7afd9f672ef280cfaba8e13b76",
+      "actual_blob": "f31eeeb973e6cd7afd9f672ef280cfaba8e13b76",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/cpu_search.h",
+      "expected_blob": "930881d5317471da22f02ec9581eee1ff4958fbd",
+      "actual_blob": "930881d5317471da22f02ec9581eee1ff4958fbd",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/fair.c",
+      "expected_blob": "276c961180c9e18cd8095d92a79f5722b02f30e1",
+      "actual_blob": "276c961180c9e18cd8095d92a79f5722b02f30e1",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/idle_task.c",
+      "expected_blob": "6b958e29eff5b84a94881add97b2b65d1ecaf2af",
+      "actual_blob": "6b958e29eff5b84a94881add97b2b65d1ecaf2af",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/rt.c",
+      "expected_blob": "141a88280755e076c3ad493ddc8203462674c33c",
+      "actual_blob": "141a88280755e076c3ad493ddc8203462674c33c",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/runq.c",
+      "expected_blob": "500bce0f50002578b02bee29844ec3194d6f9fff",
+      "actual_blob": "500bce0f50002578b02bee29844ec3194d6f9fff",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/sched.h",
+      "expected_blob": "628d3a7e5314edf32e6f2d2532370d2d5dd731ed",
+      "actual_blob": "628d3a7e5314edf32e6f2d2532370d2d5dd731ed",
+      "match": true
+    },
+    {
+      "path": "kernel/sched/sched_ktz.c",
+      "expected_blob": "9e9d7a65d184df9edbc969f140460933454a68bd",
+      "actual_blob": "9e9d7a65d184df9edbc969f140460933454a68bd",
+      "match": true
+    },
+    {
+      "path": "kernel/sysctl.c",
+      "expected_blob": "8c239ea8318a857a3d357acf2845fc8ebf95dee3",
+      "actual_blob": "8c239ea8318a857a3d357acf2845fc8ebf95dee3",
+      "match": true
+    },
+    {
+      "path": "tools/include/linux/log2.h",
+      "expected_blob": "d5677d39c1e4c88c254b0d55b9d0ca5ab505fd92",
+      "actual_blob": "d5677d39c1e4c88c254b0d55b9d0ca5ab505fd92",
+      "match": true
+    },
+    {
+      "path": "tools/perf/pmu-events/jevents",
+      "expected_blob": "560a5a3e31ea6b9b3bea038337dfefc9b98b38dc",
+      "actual_blob": "560a5a3e31ea6b9b3bea038337dfefc9b98b38dc",
+      "match": true
+    },
+    {
+      "path": "tools/perf/pmu-events/pmu-events.c",
+      "expected_blob": "6f6f134d18fd82dad511ee881bd2eb1fa04c3119",
+      "actual_blob": "6f6f134d18fd82dad511ee881bd2eb1fa04c3119",
+      "match": true
+    }
+  ]
+}

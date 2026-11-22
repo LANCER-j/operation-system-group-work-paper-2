@@ -1,0 +1,7 @@
+{
+  "file": "kernel/sched/sched_ktz.c",
+  "original_git_blob": "9e9d7a65d184df9edbc969f140460933454a68bd",
+  "modified_git_blob": "d8599b836373bd4d392609e1e8e426ce2c17d521",
+  "reason": "Observed boot NULL dereference when sd_llc is absent under QEMU WHPX; fall back to rq->sd and guard absent domains",
+  "scope": "Virtual-topology compatibility. Normal non-NULL LLC path retained. This is a deviation from author HEAD."
+}

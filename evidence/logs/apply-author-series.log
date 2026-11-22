@@ -1,0 +1,89 @@
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+.git/rebase-apply/patch:118: trailing whitespace.
+	DECLARE_BITMAP(status, KTZ_HEADS_PER_RUNQ); 
+.git/rebase-apply/patch:281: trailing whitespace.
+		list_add(&ke->runq, head);	
+.git/rebase-apply/patch:284: trailing whitespace.
+		list_add_tail(&ke->runq, head);	
+.git/rebase-apply/patch:545: trailing whitespace.
+	
+.git/rebase-apply/patch:679: trailing whitespace.
+static inline int compute_slice(struct ktz_tdq *tdq) 
+warning: squelched 9 whitespace errors
+warning: 14 lines add whitespace errors.
+.git/rebase-apply/patch:14: trailing whitespace.
+		if (ktz_prio(p->prio)) 
+warning: 1 line adds whitespace errors.
+.git/rebase-apply/patch:91: trailing whitespace.
+	pctcpu_update(pktz_se, task_curr(parent));	
+warning: 1 line adds whitespace errors.
+.git/rebase-apply/patch:21: trailing whitespace.
+ 
+warning: 1 line adds whitespace errors.
+.git/rebase-apply/patch:324: trailing whitespace.
+	
+warning: 1 line adds whitespace errors.
+.git/rebase-apply/patch:123: trailing whitespace.
+		raw_spin_lock_irqsave(&rq_high->lock, *hflags);	
+.git/rebase-apply/patch:124: trailing whitespace.
+		raw_spin_lock_irqsave(&rq_low->lock, *lflags);	
+.git/rebase-apply/patch:127: trailing whitespace.
+		raw_spin_lock_irqsave(&rq_low->lock, *lflags);	
+.git/rebase-apply/patch:128: trailing whitespace.
+		raw_spin_lock_irqsave(&rq_high->lock, *hflags);	
+.git/rebase-apply/patch:140: trailing whitespace.
+		raw_spin_unlock(&rq_high->lock);	
+warning: squelched 4 whitespace errors
+warning: 9 lines add whitespace errors.
+.git/rebase-apply/patch:15: trailing whitespace.
+		raw_spin_unlock(&rq_low->lock);	
+.git/rebase-apply/patch:22: trailing whitespace.
+		raw_spin_unlock(&rq_high->lock);	
+.git/rebase-apply/patch:71: trailing whitespace.
+ */ 
+.git/rebase-apply/patch:139: trailing whitespace.
+			return NULL;	
+warning: 4 lines add whitespace errors.
+.git/rebase-apply/patch:153: trailing whitespace.
+	
+error: patch failed: kernel/sched/sched_ktz.c:94
+error: kernel/sched/sched_ktz.c: patch does not apply
+Applying: Transplant KTZ to linux 4.9
+Applying: Fix
+Applying: Fix task_fork
+Applying: Solve nasty bug.
+Applying: Add /proc var to switch between scheds
+Applying: Add preemption and setting prio.
+Applying: Fix
+Applying: Fix gcc """feature"""
+Applying: Fix priority computation.
+Applying: Add /proc to force timeslice len, for testing purposes. Fix preemption, and typo in priority computation.
+Applying: Penalize parent when one of its child finishes exec.
+Applying: Rewrite preemption. Disable it for now.
+Applying: Implement select_task_rq
+Applying: WIP
+Applying: First implementation of (idle) load balancer.
+Applying: Add assert.
+Applying: Fix buggy BUG_ON + remove logs.
+Applying: Remove core0 overloading.
+Applying: First version of ULE load balancer. Tdq_steal is still naive for now.
+Applying: Remove useless logs + remove overload on core0.
+Applying: Implement tdq_steal as in ULE.
+Applying: Remove old load balancer.
+Applying: Implement idle stealing.
+Applying: Use RETRY_TASK instead of goto.
+Applying: Avoid pair locking for sched_balance_pair. Disable tdq_idled for now.
+Applying: Rewrite tdq_idled to avoid pair locking. Remove rcu locking.
+Applying: Fix Idle Balancing and various little things.
+Applying: Add cooldown for idle steal balancing.
+Applying: Steal from online cpus only.
+Applying: Try to steal from closest domain hierarchy. Select task rq now tries to put the new task on a CPU on which it can run directly (when preemt is enabled).
+Applying: TMP
+Applying: Remove old ready flag.
+Applying: New select_task_rq
+Patch failed at 0033 New select_task_rq
+Use 'git am --show-current-patch' to see the failed patch
+When you have resolved this problem, run "git am --continue".
+If you prefer to skip this patch, run "git am --skip" instead.
+To restore the original branch and stop patching, run "git am --abort".
